@@ -1,0 +1,98 @@
+﻿[
+  {
+    "id": "1",
+    "Technology": "T0001-PS",
+    "Name": "Suborbital Flight Environment Monitor (SFEM-)",
+    "Organization": "NASA/Ames Research Center",
+    "PI": "Steve Ord",
+    "Program Status": "Completed"
+  },
+  {
+    "id": "2",
+    "Technology": "T0004-PS",
+    "Name": "Printing the Space Future",
+    "Organization": "Made in Space, Inc.",
+    "PI": "Jason Dunn",
+    "Program Status": "Completed"
+  },
+  {
+    "id": "3",
+    "Technology": "T0016-S",
+    "Name": "Guidance Embedded Navigator Integration Environment (GENIE)",
+    "Organization": "Draper Laboratory Inc.",
+    "PI": "Rick Loffi",
+    "Program Status": "Completed"
+  },
+  {
+    "id": "4",
+    "Technology": "T0017-P",
+    "Name": "Iso-grid, Thermal-Structural Panel (IsoTherm)",
+    "Organization": "Air Force Research Laboratory - Kirtland",
+    "PI": "Hans-Peter Dumm",
+    "Program Status": "Completed"
+  },
+  {
+    "id": "5",
+    "Technology": "T0018-P",
+    "Name": "Sub-System Coupling for Grey Water Purification (VPCAR)",
+    "Organization": "NASA/Kennedy Space Center",
+    "PI": "Walt Turner",
+    "Program Status": "Withdrawn"
+  },
+  {
+    "id": "6",
+    "Technology": "T0019-S",
+    "Name": "Diapason",
+    "Organization": "DTM Technologies",
+    "PI": "Ferdinando Cassese",
+    "Program Status": "Completed"
+  },
+  {
+    "id": "7",
+    "Technology": "T0020-PS",
+    "Name": "Microgravity Multi-Phase Flow Experiment for Suborbital Testing (MFEST)",
+    "Organization": "NASA/Johnson Space Center",
+    "PI": "Kathryn M. Hurlbert",
+    "Program Status": "Active"
+  },
+  {
+    "id": "8",
+    "Technology": "T0021-S",
+    "Name": "Application of controlled vibrations to multiphase systems",
+    "Organization": "Universitat Politecnica de Catalunya",
+    "PI": "Ricard Gonzalez-Cinca",
+    "Program Status": "Active"
+  },
+  {
+    "id": "9",
+    "Technology": "T0022-S",
+    "Name": "Environment monitoring suite on suborbital Reusable Launch Vehicle (sRLV)",
+    "Organization": "Johns Hopkins University / Applied Physics Lab",
+    "PI": "H. Todd Smith",
+    "Program Status": "Active"
+  },
+  {
+    "id": "10",
+    "Technology": "T0028-P",
+    "Name": "Demonstration of non-invasive acquisition of physiologic variables from spaceflight participants",
+    "Organization": "The Vital Space Team",
+    "PI": "Ravi Komatireddy",
+    "Program Status": "Completed"
+  },
+  {
+    "id": "11",
+    "Technology": "T0046-S",
+    "Name": "Polar Mesospheric Cloud Imaging and Tomography Experiment",
+    "Organization": "Integrated Spaceflight Services LLC",
+    "PI": "Jason Reimuller",
+    "Program Status": "Withdrawn"
+  },
+  {
+    "id": "12",
+    "Technology": "T0051-P",
+    "Name": "Non-Invasive Hemodynamic Monitoring in Microgravity",
+    "Organization": "Stanford University",
+    "PI": "Gregory Kovacs",
+    "Program Status": "Completed"
+  }
+]

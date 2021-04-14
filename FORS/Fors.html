@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
+    <script type="text/javascript" src="https://oss.sheetjs.com/sheetjs/xlsx.full.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Flight Opportunities Table</title>
+</head>
+<body>
+<!-- Table Div -->
+<div id="fop-table"></div>
+<!-- Buttons Being Displayed Underneath the Table -->
+<div>
+    <button id="table-excelDownload-trigger">Download Excel File</button>
+    <button id="table-csvDownload-trigger">Download CSV File</button>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        // Sending a request for the Json File with the information we need
+        $.ajax({
+            method: "GET",
+            url: "/list"
+        })
+            .done(function (data) {
+                // Constructing the table with editable fields
+                let table = new Tabulator("#fop-table", {
+                    height: 311,
+                    layout: "fitColumns",
+                    columns: [
+                        {title: "ID", field: "id", width: 50, editor: "input"},
+                        {title: "Technology", field: "Technology", editor: "input"},
+                        {title: "Name", field: "Name", editor: "input"},
+                        {title: "Organization", field: "Organization", editor: "input"},
+                        {title: "PI", field: "PI", editor: "input"},
+                        {title: "Program Status", field: "Program Status", editor: "input"}
+                    ],
+                });
+
+                // Setting Table Data
+                table.setData(data);
+
+                // On Click Handler for Excel Sheet Download Button
+                document.getElementById("table-excelDownload-trigger").addEventListener("click", function () {
+                    table.download("xlsx", "table-data.xlsx");
+                });
+
+                // On Click Handler for CSV Download Button
+                document.getElementById("table-csvDownload-trigger").addEventListener("click", function () {
+                    table.download("csv", "table-data.csv");
+                });
+            });
+    });
+
+</script>
+</html>
